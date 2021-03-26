@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countries</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    ><link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container navbar-content">
+        <h1>Countries</h1>
+      </div>
+    </nav>
+    <div class="background">
+      <header class="container-header filter-content">
+        <div class="box-header">
+          <p class="title-header">Explora el mundo</p>
+          <p class="text-header">
+            Conoce los datos más relevantes de tus países favoritos
+          </p>
+          <img src=../img/background2.jpg>
 
-</head>
-<body>
+          <form id="formInput">
+            <input type="text" placeholder="Busca por país" id="inputText" />
+          </form>
+        </div>
+      </header>
+    </div>
+    <main class="container grid" id="elements"></main>
     <script src="data.js"></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
